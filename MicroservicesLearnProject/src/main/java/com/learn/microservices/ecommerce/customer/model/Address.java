@@ -18,11 +18,11 @@ import lombok.Data;
  *
  */
 @Entity
-@Table(name="Customer_Address")
+@Table(name="ADDRESS_DETAILS")
 public @Data class Address {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int addressId;
+	private long addressId;
 	private String address1;
 	private String address2;
 	private String city;
